@@ -17,7 +17,7 @@ export default function Hero() {
 
             <div className="flex justify-center gap-4 flex-wrap">
               <a
-                href="#destinations"
+                href="#Destinations"
                 className="bg-sky-800 text-white font-medium py-3 px-6 rounded-lg hover:bg-sky-600 hover:scale-105 transition duration-300 shadow"
               >
                 Explore Destinations
