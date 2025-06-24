@@ -13,6 +13,10 @@ export default function DestinationsPage() {
                 img1="./images/destinations.svg"
                 message="Explore Destinations"
                 reference="#Destinations"
+                textcolor="text-gray-700"
+                btnBg="bg-sky-700"
+                btnHover="hover:bg-sky-600"
+                btnTxt="text-white"
             />
             <Places />
             <Footer />

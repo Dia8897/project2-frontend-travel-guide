@@ -10,9 +10,12 @@ export default function ContactPage() {
       <Hero
         title="Get in Touch with Us"
         description="Have questions or need personalized travel advice? Our friendly team is here to help! Reach out anytime for support, recommendations, or to share your own Lebanese travel stories. Let’s make your journey truly exceptional."
-        img1="../images/contact.svg"
+        img1="./images/contact.svg"
         message="We're here to help!"
         reference="#Contact Us"
+        textcolor="text-sky-700"
+        btnBg="bg-white"
+        btnTxt="text-sky-800"
       />
       <Contact />
       <Footer />

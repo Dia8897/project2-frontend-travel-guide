@@ -14,6 +14,10 @@ export default function AboutPage() {
         img1="../images/about.svg"
         message="Who We Are"
         reference="#About Us"
+        textcolor="text-sky-700"
+        btnBg="bg-sky-800"
+        btnHover="hover:bg-sky-600"
+        btnTxt="text-white"
       />
       <AboutUs />
       <Footer />
