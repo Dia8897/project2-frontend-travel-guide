@@ -25,11 +25,12 @@ export default function Header() {
             className={`${menuOpen ? 'flex' : 'hidden'
               } sm:flex flex-col sm:flex-row w-full sm:w-auto gap-4 sm:gap-6 bg-sky-800 sm:bg-transparent rounded-lg px-6 py-4 sm:p-0`}
           >
-            {['About Us', 'Destinations', 'Contact Us'].map((section) => {
+            {['About Us', 'Destinations', 'Contact Us','Home'].map((section) => {
               const links = {
                 'About Us': '/about',
                 'Destinations': '/destinations',
-                'Contact Us': '/contact'
+                'Contact Us': '/contact',
+                'Home':'/'
               };
               return(
               <a
