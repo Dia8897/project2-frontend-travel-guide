@@ -1,8 +1,10 @@
 'use client';
-import { useState } from 'react';
+import { use, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathName = usePathname();
 
   return (
     <>
@@ -37,9 +39,14 @@ export default function Header() {
                 key={section}
                 href={links[section]}
                 onClick={() => setMenuOpen(false)}
-                className="text-gray-100 font-semibold text-base px-3 py-2 rounded-md hover:bg-sky-600 hover:scale-105 transition"
+                // className="text-gray-100 font-semibold text-base px-3 py-2 rounded-md hover:bg-sky-600 hover:scale-105 transition"
+                className = {`text-base px-3 py-2 rounded-md transition font-semibold ${
+                  pathName === links[section]? 
+                  'bg-white text-sky-800' :
+                  'text-gray-100 hover:bg-sky-600 hover:scale-105'
+                }`}
               >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
+                {section}
               </a>
 )})}
           </nav>
