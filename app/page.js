@@ -1,11 +1,19 @@
+'use client'
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs"
 import {places} from "./placesData"
 import Places from "./components/Places";
+import OptionSelector from "./components/options";
+
 
 export default function Home() {
+
+    const handleSelect = (selectedOption) => {
+    console.log("Selected option:", selectedOption);
+
+  };
   return (
     <main>
       <Header />
@@ -24,6 +32,10 @@ export default function Home() {
       <AboutUs
         content="Start your journey through Lebanon with handpicked recommendations, expert travel tips, and hidden gems you won't find in typical guides. From city buzz to mountain calm, this platform is your trusted companion to explore Lebanon's diverse beauty with confidence and ease."
         direction="left"
+      />
+
+      <OptionSelector
+      options={['Summer', 'Winter', 'Spring']} onSelect={handleSelect}
       />
 
       <Places
