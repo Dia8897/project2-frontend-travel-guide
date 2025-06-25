@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Places from "../components/Places";
 import Footer from "../components/Footer";
+import {places} from "../placesData"
 
 export default function DestinationsPage() {
     return (
@@ -18,7 +19,9 @@ export default function DestinationsPage() {
                 btnHover="hover:bg-sky-600"
                 btnTxt="text-white"
             />
-            <Places />
+            <Places 
+            title="Destinations"
+            places={places} />
             <Footer />
         </main>
     );
