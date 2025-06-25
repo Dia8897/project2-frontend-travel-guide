@@ -1,6 +1,7 @@
 'use client';
+import Link from "next/link";
 
-export default function Places({title,places = []}) {
+export default function Places({ title, places = [] }) {
 
 
   return (
@@ -11,7 +12,7 @@ export default function Places({title,places = []}) {
         </h2>
 
         <div className="grid md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8">
-          {places.map(({ name, emoji, description, image }) => (
+          {places.map(({ name, slug, emoji, description, image }) => (
             <div
               key={name}
               className="group md:h-[350px] bg-gray-50 rounded-xl shadow-md overflow-hidden flex flex-col cursor-pointer
@@ -33,9 +34,11 @@ export default function Places({title,places = []}) {
                 </p>
 
                 <div className=" flex gap-3 mt-5">
-                  <button className="bg-sky-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-sky-600 transition hover:scale-105 cursor-pointer">
-                    Read More
-                  </button>
+                  <Link href = {`places/${slug}`}>
+                    <button className="bg-sky-800 text-white px-4 py-2 rounded-lg text-sm hover:bg-sky-600 transition hover:scale-105 cursor-pointer">
+                      Read More
+                    </button>
+                  </Link>
                   <button className="border border-sky-600 text-sky-600 hover:scale-105 transition cursor-pointer px-4 py-2 rounded-lg text-sm ">
                     Book Now
                   </button>

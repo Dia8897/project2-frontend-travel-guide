@@ -2,7 +2,8 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Places from "../components/Places";
 import Footer from "../components/Footer";
-import {places} from "../placesData"
+import {places} from "../placesData";
+
 
 export default function DestinationsPage() {
     return (

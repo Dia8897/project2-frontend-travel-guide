@@ -39,7 +39,6 @@ export default function OptionSelector({ options = [], onSelect }) {
         ))}
       </div>
 
-      {/* Submit Button */}
       <button
         onClick={handleSubmit}
         className="bg-sky-800 text-white font-medium px-6 py-2 rounded-lg hover:bg-sky-600 transition"
@@ -47,7 +46,6 @@ export default function OptionSelector({ options = [], onSelect }) {
         Submit
       </button>
 
-      {/* Display Selections */}
       {submittedOptions.length > 0 && (
         <div className="text-center mt-4 text-sky-700 text-lg">
           <p className="font-semibold mb-1">You selected:</p>
