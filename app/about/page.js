@@ -19,7 +19,10 @@ export default function AboutPage() {
         btnHover="hover:bg-sky-600"
         btnTxt="text-white"
       />
-      <AboutUs />
+      <AboutUs 
+        content = "We're passionate storytellers and travel enthusiasts dedicated to highlighting Lebanon's rich culture, hidden gems, and breathtaking landscapes."
+        direction ="right"
+      />
       <Footer />
     </main>
   );

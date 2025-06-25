@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import AboutUs from "../components/AboutUs"
 
 export default function ContactPage() {
   return (
@@ -16,6 +17,10 @@ export default function ContactPage() {
         textcolor="text-sky-700"
         btnBg="bg-white"
         btnTxt="text-sky-800"
+      />
+      <AboutUs 
+      content="Have questions, feedback, or looking for custom travel suggestions? We’re just a message away. Let us know how we can help make your Lebanese journey smoother, deeper, and more memorable — we love hearing from fellow travelers!"
+      direction ="right"
       />
       <Contact />
       <Footer />
