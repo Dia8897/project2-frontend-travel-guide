@@ -1,16 +1,13 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 
-// import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
 export default function Reviews() {
