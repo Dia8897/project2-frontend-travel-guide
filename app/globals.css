@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+.swiper-button-next, .swiper-button-prev {
+ color: #0c4a6e !important;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+ height: 30px !important;
+ width: 30px !important;
+ font-size: 30px !important;
+}
+
+
+.swiper-pagination-bullet{
+  background-color: #0ea5e9 !important;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active{
+  background-color: 	#075985 !important;
+  opacity: 1;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

@@ -2,10 +2,12 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import '../globals.css';
 
 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 
 import { Pagination, Navigation } from 'swiper/modules';
@@ -15,6 +17,8 @@ export default function Reviews() {
         <>
             <section className="px-4 py-16 bg-gray-50">
                 <h2 className="text-3xl font-bold text-center text-sky-800 mb-10">Traveler Reviews</h2>
+                {/* <div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div> */}
                 <Swiper pagination={{ clickable: true }} navigation={true} modules={[Pagination, Navigation]} spaceBetween={30}
                     slidesPerView={1}
                     className="max-w-4xl mx-auto swiper-container">
