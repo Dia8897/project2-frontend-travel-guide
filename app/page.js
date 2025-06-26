@@ -7,6 +7,7 @@ import {places} from "./placesData"
 import Places from "./components/Places";
 import OptionSelector from "./components/options";
 import Reviews from "./components/reviews"
+import {DefaultAccordion} from './components/Accordion';
 
 
 export default function Home() {
@@ -34,6 +35,8 @@ export default function Home() {
         content="Start your journey through Lebanon with handpicked recommendations, expert travel tips, and hidden gems you won't find in typical guides. From city buzz to mountain calm, this platform is your trusted companion to explore Lebanon's diverse beauty with confidence and ease."
         direction="left"
       />
+
+      <DefaultAccordion/>
 
       <OptionSelector
       options={['Summer', 'Winter', 'Spring']} onSelect={handleSelect}

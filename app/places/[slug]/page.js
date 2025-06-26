@@ -2,6 +2,7 @@ import { places } from "../../placesData";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
+
 export default async function placeDetails({ params }) {
     const place = places.find(p => p.slug === params.slug);
     if (!place) {

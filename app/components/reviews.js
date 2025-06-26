@@ -1,14 +1,8 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '../globals.css';
-
-
-import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 
 import { Pagination, Navigation } from 'swiper/modules';
 
@@ -17,13 +11,20 @@ export default function Reviews() {
         <>
             <section className="px-4 py-16 bg-gray-50">
                 <h2 className="text-3xl font-bold text-center text-sky-800 mb-10">Traveler Reviews</h2>
-                {/* <div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div> */}
-                <Swiper pagination={{ clickable: true }} navigation={true} modules={[Pagination, Navigation]} spaceBetween={30}
+
+                <Swiper
+                    pagination={{ clickable: true }}
+                    navigation={true}
+                    modules={[Pagination, Navigation]}
+                    spaceBetween={30}
                     slidesPerView={1}
-                    className="max-w-4xl mx-auto swiper-container">
+                    className="max-w-4xl mx-auto swiper-container"
+                >
                     <SwiperSlide>
-                        <div className="bg-white p-6 rounded-xl shadow-md">
+                        <div
+                            className="bg-white p-18 mx-auto rounded-xl shadow-md"
+                            style={{ minHeight: '16rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+                        >
                             <p className="text-gray-700 mb-4">
                                 “Absolutely stunning experience in Lebanon! The guide helped us plan everything perfectly.”
                             </p>
@@ -31,21 +32,32 @@ export default function Reviews() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-white p-6 rounded-xl shadow-md">
+                        <div
+                            className="bg-white p-18 mx-auto rounded-xl shadow-md"
+                            style={{ minHeight: '16rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+                        >
                             <p className="text-gray-700 mb-4">
                                 “I loved exploring the hidden gems mentioned here. Super useful tips and clean layout!”
                             </p>
                             <p className="text-sky-800 font-semibold">— Karim, Lebanon</p>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide> <div className="bg-white p-6 rounded-xl shadow-md">
-                        <p className="text-gray-700 mb-4">
-                            “The recommendations were spot-on. Highly recommended for first-time travelers!”
-                        </p>
-                        <p className="text-sky-800 font-semibold">— Maya, France</p>
-                    </div></SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-white p-6 rounded-xl shadow-md">
+                        <div
+                            className="bg-white p-18 mx-auto rounded-xl shadow-md"
+                            style={{ minHeight: '16rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+                        >
+                            <p className="text-gray-700 mb-4">
+                                “The recommendations were spot-on. Highly recommended for first-time travelers!”
+                            </p>
+                            <p className="text-sky-800 font-semibold">— Maya, France</p>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div
+                            className="bg-white p-18 mx-auto rounded-xl shadow-md"
+                            style={{ minHeight: '16rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+                        >
                             <p className="text-gray-700 mb-4">
                                 “A truly unforgettable trip thanks to this guide. The places recommended were amazing and the tips were so helpful!”
                             </p>
@@ -53,7 +65,10 @@ export default function Reviews() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-white p-6 rounded-xl shadow-md">
+                        <div
+                            className="bg-white p-18 mx-auto rounded-xl shadow-md"
+                            style={{ minHeight: '16rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+                        >
                             <p className="text-gray-700 mb-4">
                                 “Excellent resource for exploring the culture and nature. The photos and descriptions made planning easy.”
                             </p>
@@ -61,7 +76,10 @@ export default function Reviews() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-white p-6 rounded-xl shadow-md">
+                        <div
+                            className="bg-white p-18 mx-auto rounded-xl shadow-md"
+                            style={{ minHeight: '16rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+                        >
                             <p className="text-gray-700 mb-4">
                                 “Loved the user-friendly layout and the detailed info on each destination. Perfect for first-time visitors.”
                             </p>
@@ -69,7 +87,10 @@ export default function Reviews() {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="bg-white p-6 rounded-xl shadow-md">
+                        <div
+                            className="bg-white p-18 rounded-xl shadow-md"
+                            style={{ minHeight: '16rem', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+                        >
                             <p className="text-gray-700 mb-4">
                                 “The booking and itinerary suggestions made my trip smooth and stress-free. Highly recommend this guide.”
                             </p>
