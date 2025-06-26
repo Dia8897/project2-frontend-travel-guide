@@ -51,7 +51,7 @@ export default function Reviews() {
                     <SwiperSlide>
                         <div className="bg-white p-6 rounded-xl shadow-md">
                             <p className="text-gray-700 mb-4">
-                                “Excellent resource for exploring Lebanon's culture and nature. The photos and descriptions made planning easy.”
+                                “Excellent resource for exploring the culture and nature. The photos and descriptions made planning easy.”
                             </p>
                             <p className="text-sky-800 font-semibold">— Rami, Lebanon</p>
                         </div>
