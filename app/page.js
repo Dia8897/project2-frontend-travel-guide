@@ -6,6 +6,7 @@ import AboutUs from "./components/AboutUs"
 import {places} from "./placesData"
 import Places from "./components/Places";
 import OptionSelector from "./components/options";
+import Reviews from "./components/reviews"
 
 
 export default function Home() {
@@ -42,6 +43,8 @@ export default function Home() {
         title="Top Destinations"
         places={places.slice(0,3)}
       />
+
+      <Reviews/>
       <Footer />
     </main>
   );
