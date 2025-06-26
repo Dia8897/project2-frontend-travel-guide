@@ -3,16 +3,17 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs"
-import {places} from "./placesData"
+import { places } from "./placesData"
 import Places from "./components/Places";
 import OptionSelector from "./components/options";
 import Reviews from "./components/reviews"
-import {DefaultAccordion} from './components/Accordion';
+import AccordionCustomIcon from './components/AccordionCustomIcon';
+
 
 
 export default function Home() {
 
-    const handleSelect = (selectedOption) => {
+  const handleSelect = (selectedOption) => {
     console.log("Selected option:", selectedOption);
 
   };
@@ -35,19 +36,18 @@ export default function Home() {
         content="Start your journey through Lebanon with handpicked recommendations, expert travel tips, and hidden gems you won't find in typical guides. From city buzz to mountain calm, this platform is your trusted companion to explore Lebanon's diverse beauty with confidence and ease."
         direction="left"
       />
-
-      <DefaultAccordion/>
+      <AccordionCustomIcon />
 
       <OptionSelector
-      options={['Summer', 'Winter', 'Spring']} onSelect={handleSelect}
+        options={['Summer', 'Winter', 'Spring']} onSelect={handleSelect}
       />
 
       <Places
         title="Top Destinations"
-        places={places.slice(0,3)}
+        places={places.slice(0, 3)}
       />
 
-      <Reviews/>
+      <Reviews />
       <Footer />
     </main>
   );
